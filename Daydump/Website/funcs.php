@@ -10,10 +10,10 @@ function alert_box($message){
 //Function that connects to the database
 function dbConnect() 
 {
-    $host = "localhost";
-    $username = "root";
-    $password = "root";
-    $database_name = "regform";
+    $host = "127.0.0.1:50667";
+    $username = "azure";
+    $password = "6#vWHD_$";
+    $database_name = "localdb";
     
     //create a connection
     $conn = new mysqli($host, $username, $password, $database_name);
