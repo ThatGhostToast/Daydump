@@ -13,7 +13,7 @@ function dbConnect()
     $host = "127.0.0.1:50667";
     $username = "azure";
     $password = "6#vWHD_$";
-    $database_name = "localdb";
+    $database_name = "regform";
     
     //create a connection
     $conn = new mysqli($host, $username, $password, $database_name);
