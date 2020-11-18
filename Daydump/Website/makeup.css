@@ -1,20 +1,16 @@
 /*
+	DayDump
 	Zac Almas
 	10/18/20
 	This page makes the others look pretty
 */
 	  body {
+	  			display: flex;
+	  			justify-content: center;
+	  			align-items: center;
+	  			min-height: 100vh;
 		  		background: radial-gradient(circle, white, #ECECEC);
 		  		font-family:Trebuchet MS;
-		   }
-	  
-		h1 {
-		  		 font: bold 50px "Century Schoolbook", Georgia, Times, serif;
-				 color: #9370DB;
-				 line-height: 90%;
-				 margin: .2em 0 .4em 0;
-				 letter-spacing: -2px;
-				 text-align: center;	
 		   }
 		
 		h2 {
@@ -27,12 +23,61 @@
 				 
 		   }
 		   
+		 p {	
+		 		font: bold 25px "Century Schoolbook", Georgia, Times, serif;
+		 		color: #9370DB;
+		 		margin: .2em 0 .4em 0;
+		 		letter-spacing: -2px;
+				text-align: center;
+		   }
+	/*	   
 		form {
+				height: 10em;
+				position: relative;
+				margin: 0;
+				position: absolute;
+				top: 30%;
+				left: 32%;
+				margin-right: -50%;
+				transform: translaste(-50%,-50%);
+				text-align: center;
 		  		background-color:#9370DB;
 		  		width:400px;
 		  		padding:20px;
 		  		border:1px solid black;
-		      }
+	      	  }
+	  */  
+		   /*
+		   CSS used for error boxes was taken from https://www.w3schools.com/howto/howto_js_alert.asp
+		   */
+		   
+		   /* The alert message box */
+			.alert {
+  				padding: 20px;
+  				background-color: #f44336; /* Red */
+  				color: white;
+  				margin-bottom: 15px;
+  				opacity: .9;
+  				width: 29%;
+				   }
+
+		  /* The close button */
+			.closebtn {
+  				margin-left: 15px;
+  				color: white;
+  				font-weight: bold;
+  				float: right;
+  				font-size: 22px;
+  				line-height: 20px;
+ 			 	cursor: pointer;
+  				transition: 0.3s;
+					  }
+
+		  /* When moving the mouse over the close button */
+			.closebtn:hover {
+  				color: black;
+							}
+							
 		   
 		   /*
 		   CSS used for the buttons was taken from https://fdossena.com/?p=html5cool/buttons/i.frag
@@ -154,7 +199,7 @@
 				background-color:#9370DB;
 				text-align:center;
 				transition: all 0.2s;
-				position: absolute;
+				position: fixed;
 				top: 115px;
 		        right: 580px;
 	     }
@@ -163,5 +208,88 @@
 	     		background-color:#4095c6;
 	     }
 	     
+	     a.button7 {
+	            display:inline-block;
+				padding:0.3em 1.2em;
+				margin:0 0.3em 0.3em 0;
+				border-radius:2em;
+				box-sizing: border-box;
+				text-decoration:none;
+				font-family:'Roboto',sans-serif;
+				font-weight:300;
+				background-color:#9370DB;
+				text-align:center;
+				transition: all 0.2s;
+				position: fixed;
+				top: 10px;
+		        left: 10px;
+	     }
 	     
+	     a.button7:hover {
+	     		background-color:#4095c6;
+	     }
+	     
+	     /*
+	     Form CSS taken from: https://codepen.io/alphardex/pen/zYYZorR
+	     */
+	     
+	     .btn {
+	     		padding: 8px 20px;
+	     		border-radius: 0;
+	     		overflow: hidden;
+	     		transition: all 0.2s;	     		
+	     }
+	     
+	     .btn::before {
+	     		position: absolute;
+	     		content: "";
+	     		top: 0;
+	     		left: 0;
+	     		background: linear-gradient(120deg, transparent, var(--primary-color), transparent);
+	     		transform: translateX(-100%);
+	     		transition:0.6s;
+	     }
+	     
+	     .btn:hover {
+	     		background-color: #9370DB;
+	     		box-shadow: 0 0 20px 10px hsla(204, 70%, 53%, 0.5);
+	     }
+	     
+	     .btn:hover::before {
+	     		transform: translateX(100%);
+	     }
+	     
+	     .form-input-material {
+	     		--input-default-border-color: white;
+	     		--input-border-bottom-color: white;
+	     		
+	     }
+	     
+
+	     
+	     .login-form {
+	     		display: flex;
+	     		flex-direction: column;
+	     		align-items: center;
+	     		padding: 50px 40px;
+	     		color: white;
+	     		background: rgba(0, 0, 0, 0.8);
+	     		border-radius: 10px;
+	     		box-shadow:0 0.4px 0.4px rgba(128, 128, 128, 0.109), 0 1px 1px rgba(128, 128, 128, 0.155), 0 2.1px 2.1px rgba(
+	     		128, 128, 128, 0.195), 0 4.4px 4.4px rgba (128, 128, 128, 0.241), 0 12px 12px rgba(128, 128, 128, 0.35);
+	     }
+	    
+	     .login-form h1{
+	     		margin: 0 0 24px 0;
+	     }
+	     
+	     .login-form .form-input-material {
+	     		margin: 12px 0;
+	     }
+	     
+	     .login-form .btn {
+	     		width: 100%;
+	     		margin: 18px 0 9px 0;
+	     }
+		  
 	       

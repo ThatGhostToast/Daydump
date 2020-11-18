@@ -1,5 +1,11 @@
 <?php
 
+/*
+ * DayDump
+ * Zac Almas
+ * 10/18/20
+ * This page handles the users registration.
+ */
 
 //Allows us to call the function that connects us to the database
 include 'funcs.php';

@@ -3,6 +3,7 @@
 session_start();
 
 /*
+ * DayDump
  * Zac Almas
  * 10/18/20
  * This processes the new blog post

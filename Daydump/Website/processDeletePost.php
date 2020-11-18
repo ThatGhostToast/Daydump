@@ -1,6 +1,13 @@
 <?php
 session_start();
 
+/*
+ * DayDump
+ * Zac Almas
+ * 10/18/20
+ * This page processes deleting a post from an admin edit
+ */
+
 require_once 'funcs.php';
 
 if ($_SESSION['role'] != 'admin')

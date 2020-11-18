@@ -4,6 +4,7 @@ session_start();
 include 'funcs.php';
 
 /*
+ * DayDump
  * Zac Almas
  * 10/18/20
  * This processes the edited post.
@@ -11,7 +12,6 @@ include 'funcs.php';
 
 $blogTitle = $_GET['blogTitle'];
 $blogContent = $_GET['blogContent'];
-$user_id = $_SESSION['id'];
 $id = $_GET['id'];
 $role = $_SESSION['role'];
 

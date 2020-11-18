@@ -2,6 +2,7 @@
 
 session_start();
 /*
+ * DayDump
  * Zac Almas
  * 10/18/20
  * This page handles logins
@@ -37,7 +38,7 @@ if ($uname == null or $pword == null){
             
             header("Location: loginSuccess.php");
         }else {
-            header("Location: loginPage.php");
+            header("Location: loginFailed.php");
             
         }
         

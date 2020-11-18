@@ -1,18 +1,25 @@
 <?php
+session_start();
 
-//This page is where the functions are stored 
+/*
+ * DayDump
+ * Zac Almas
+ * 10/18/20
+ * This page is where the functions are stored
+ */ 
 
 //alert box function
-function alert_box($message){
+function alert_box(){
+    $message = $_SESSION['errorMessage'];
     echo "<script>alert($message)</script>";
 }
 
 //Function that connects to the database
 function dbConnect() 
 {
-    $host = "127.0.0.1:50667";
-    $username = "azure";
-    $password = "6#vWHD_$";
+    $host = "localhost";
+    $username = "root";
+    $password = "root";
     $database_name = "regform";
     
     //create a connection

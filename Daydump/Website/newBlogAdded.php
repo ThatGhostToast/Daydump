@@ -1,6 +1,7 @@
 <?php
 session_start();
 /*
+ * DayDump
  * Zac Almas
  * 10/18/20
  * This page lets the user know the blog was uploaded successfully
@@ -16,7 +17,16 @@ session_start();
 	 <link href="makeup.css" rel="stylesheet" type="text/css">
 	 
 	 <style>
-	   
+	   h1 {
+		  		 font: bold 50px "Century Schoolbook", Georgia, Times, serif;
+				 color: #9370DB;
+				 line-height: 90%;
+				 margin: .2em 0 .4em 0;
+				 letter-spacing: -2px;
+				 text-align: center;
+				 position: fixed;
+				 top: 0;	
+		   }
 	 </style>
 	  
    </head>

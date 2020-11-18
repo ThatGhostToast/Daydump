@@ -2,6 +2,7 @@
 session_start();
 
 /*
+ * DayDump
  * Zac Almas
  * 10/18/20
  * This page allows the admin to alter user posts.
